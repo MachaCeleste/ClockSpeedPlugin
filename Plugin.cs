@@ -18,7 +18,7 @@ public class Plugin : BaseUnityPlugin
 
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-        var harmony = new Harmony("com.machaceleste.clockspeed");
+        var harmony = new Harmony("com.machaceleste.clockspeedplugin");
         harmony.PatchAll();
     }
 }
